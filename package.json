@@ -1,0 +1,21 @@
+{
+  "name": "Hackuna-Chrome-Extension",
+  "version": "1.0.0",
+  "description": "Hackuna is the fucking tools will make you like a God by G3MB3L INT3RN3T",
+  "scripts": {
+    "build": "webpack --config config.background.js && webpack --config config.inject.js"
+  },
+  "keywords": ["Hakuna", "Hackuna", "Chrome Extension", "Hakuna Hack", "Hakuna Bot"],
+  "author": "G3MB3L INT3RN3T <gembelinternet404@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "jwt-decode": "^3.1.2"
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^2.11.1",
+    "webpack": "^5.31.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-obfuscator": "^3.3.0"
+  }
+}

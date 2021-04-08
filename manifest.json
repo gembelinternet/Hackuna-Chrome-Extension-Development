@@ -1,0 +1,34 @@
+{
+	"name": "Hackuna Tools",
+	"description": "Hackuna is the fucking tools will make you like a God by G3MB3L INT3RN3T",
+	"version": "1.0",
+	"author": "gembelinternet <gembelinternet404@gmail.com>",
+	"manifest_version": 2,
+	"background": {
+		"scripts": ["dist/background.min.js"]
+	},
+	"permissions": [
+		"<all_urls>",
+		"tabs",
+		"cookies",
+		"webRequest",
+		"notifications"
+	],
+	"content_scripts": [
+		{
+			"matches": ["*://*/*"],
+			"js": ["dist/inject.min.js"]
+		}
+	],
+	"browser_action": {
+		"default_title": "Hackuna Tools",
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "images/logo/hackuna16x16.png",
+			"32": "images/logo/hackuna32x32.png",
+			"48": "images/logo/hackuna48x48.png",
+			"128": "images/logo/hackuna128x128.png"
+		}
+	},
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
